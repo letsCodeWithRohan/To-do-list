@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | To-Do List</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="to-do-app">
+            <h2>To-Do-List <img src="/static/images/icon.png" alt=""></h2>
+            <form class="row" method="post" action="/">
+                <input type="text" name="task" required id="input-box" placeholder="Your Tasks...">
+                <button type="submit">Add</button>
+            </form>
+            <ul id="list-container">
+                {% for id ,title, status,created_at in data %}
+                {% if status == "pending" %}
+                <li>
+                    <a href="/complete/{{id}}">
+                    <img src="/static/images/unchecked.png" alt="">
+                    </a> {{title}} <a class="edit" href="/edit/{{id}}">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                    </a> 
+                    <a class="remove" href="/delete/{{id}}">×</a>
+                </li>
+                {% else %}
+                <li class="checked"><a href="/pending/{{id}}"><img src="/static/images/checked.png" alt=""></a> {{title}} <a class="remove" href="/delete/{{id}}">×</a></li>
+                {% endif %}
+                {% else %}
+                <p>No tasks added.</p>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
