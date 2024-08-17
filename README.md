@@ -1,3 +1,7 @@
+<h1>To-do-list application in flask</h1>
+<hr>
+<h3>Created By Chaudhari Rohan</h3>
+
 ```SQL
 CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
