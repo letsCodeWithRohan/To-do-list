@@ -8,11 +8,24 @@
 <li>Download and Extract This Repository</li>
 <li>Open command prompt in that folder</li>
 <li><p>Install virtualenv if you don't have it</p>  
+    
 ```bash
 pip install virtualenv
-``` 
+```
+
 </li>
-<li>create virtual environment for this project by using</li>
+<li><p>create virtual environment for this project by using</p>
+
+```bash
+python -m venv .venv
+```
+<p>OR</p>
+
+```bash
+virtualenv .venv
+```
+</li>
+    
 ```SQL
 CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -21,4 +34,5 @@ CREATE TABLE tasks (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
+
 </ol>
