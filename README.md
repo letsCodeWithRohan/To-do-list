@@ -4,6 +4,9 @@
 
 <h4>Steps to download and run this project</h4>
 
+<ul>
+<li starts='1'></li>
+
 ```SQL
 CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -12,3 +15,4 @@ CREATE TABLE tasks (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
+</ul>
