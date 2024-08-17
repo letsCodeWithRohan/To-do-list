@@ -5,10 +5,13 @@
 <h4>Steps to download and run this project</h4>
 
 <ol start="1">
-<li>Download This Repository</li>
-<li>Extract the downloaded folder</li>
+<li>Download and Extract This Repository</li>
 <li>Open command prompt in that folder</li>
-<li>Install virtualenv if you don't have it</li>
+<li><p>Install virtualenv if you don't have it</p>  
+```bash
+pip install virtualenv
+``` 
+</li>
 <li>create virtual environment for this project by using</li>
 ```SQL
 CREATE TABLE tasks (
