@@ -19,7 +19,7 @@ pip install virtualenv
 ```bash
 python -m venv .venv
 ```
-<p>OR</p>
+<p align="center">OR</p>
 
 ```bash
 virtualenv .venv
