@@ -41,11 +41,26 @@ pip install flask flask_mysql
 </li>
 <li>
 <p>Setup Database</p>
-<ol start="1">
+<ul>
 <li>Open XAMPP CONTROL PANEL.</li>
 <li>Start <mark>Apache</mark> and <mark>MySQL</mark></li>
 <li>Open <kbd>Admin</kbd> of MySQL</li>
-</ol>
+<li>Create New Database as your wish Ex : "to_do_list"</li>
+<li>Click on it Them open <kbd>SQL</kbd> Tab </li>
+<li>
+<p>Paster The below Query to create table</p>
+      
+```SQL
+CREATE TABLE tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    status VARCHAR(50) NOT NULL DEFAULT 'pending',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+</li>
+<li>Run The Query by clicking <kbd>Go</kbd></li>
+</ul>
 </li>
 <li>
 <p>Run the Project</p>
