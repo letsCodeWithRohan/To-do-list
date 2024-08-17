@@ -46,7 +46,7 @@ pip install flask flask_mysql
 <li>Start <mark>Apache</mark> and <mark>MySQL</mark></li>
 <li>Open <kbd>Admin</kbd> of MySQL</li>
 <li>Create New Database as your wish Ex : "to_do_list"</li>
-<li>Click on it Them open <kbd>SQL</kbd> Tab </li>
+<li>Click on it then open <kbd>SQL</kbd> Tab </li>
 <li>
 <p>Paster The below Query to create table</p>
       
