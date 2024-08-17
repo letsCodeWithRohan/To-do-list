@@ -25,7 +25,28 @@ python -m venv .venv
 virtualenv .venv
 ```
 </li>
+<li>
+<p>Activate virtual environment</p>
+
+```bash
+.venv\Scripts\activate
+```
+</li>
+<li>
+<p>Install required dependencies</p>
     
+```bash
+pip install flask flask_mysql
+```
+</li>
+<li>
+<p>Run the Project</p>
+
+```bash
+python app.py
+```
+</li>
+
 ```SQL
 CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
