@@ -40,20 +40,19 @@ pip install flask flask_mysql
 ```
 </li>
 <li>
+<p>Setup Database</p>
+<ol start="1">
+<li>Open XAMPP CONTROL PANEL.</li>
+<li>Start <mark>Apache</mark> and <mark>MySQL</mark></li>
+<li>Open <kbd>Admin</kbd> of MySQL</li>
+</ol>
+</li>
+<li>
 <p>Run the Project</p>
 
 ```bash
 python app.py
 ```
 </li>
-
-```SQL
-CREATE TABLE tasks (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    status VARCHAR(50) NOT NULL DEFAULT 'pending',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
 
 </ol>
