@@ -36,7 +36,7 @@ virtualenv .venv
 <p>Install required dependencies</p>
     
 ```bash
-pip install flask flask_mysql
+pip install flask flask_mysqldb
 ```
 </li>
 <li>
