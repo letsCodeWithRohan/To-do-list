@@ -7,7 +7,9 @@
 <ol start="1">
 <li>Download This Repository</li>
 <li>Extract the downloaded folder</li>
-
+<li>Open command prompt in that folder</li>
+<li>Install virtualenv if you don't have it</li>
+<li>create virtual environment for this project by using</li>
 ```SQL
 CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
