@@ -4,8 +4,9 @@
 
 <h4>Steps to download and run this project</h4>
 
-<ul>
-<li starts='1'></li>
+<ol start="1">
+<li>Download This Repository</li>
+<li>Extract the downloaded folder</li>
 
 ```SQL
 CREATE TABLE tasks (
@@ -15,4 +16,4 @@ CREATE TABLE tasks (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
-</ul>
+</ol>
