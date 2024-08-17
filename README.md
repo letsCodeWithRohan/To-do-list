@@ -1,6 +1,8 @@
 <h1>To-do-list application in flask</h1>
-<hr>
+
 <h3>Created By Chaudhari Rohan</h3>
+
+<h4>Steps to download and run this project</h4>
 
 ```SQL
 CREATE TABLE tasks (
